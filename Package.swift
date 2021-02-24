@@ -12,13 +12,10 @@ let package = Package(
             targets: ["Beethoven"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/vadymmarkov/Pitchy.git", from: "3.0.0")
-//        .package(url: "https://github.com/vadymmarkov/Pitchy.git", from: "2"),
+        .package(name: "Pitchy", url: "https://github.com/vadymmarkov/Pitchy.git", .branch("master"))
     ],
     targets: [
-        .target(
-            name: "Beethoven",
-            path: "Source")
+        .target(name: "Beethoven", dependencies: ["Pitchy"], path: "Source")
     ]
 )
 
