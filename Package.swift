@@ -12,7 +12,7 @@ let package = Package(
             targets: ["Beethoven"]),
     ],
     dependencies: [
-        .package(name: "Pitchy", url: "https://github.com/vadymmarkov/Pitchy.git", .branch("master"))
+        .package(name: "Pitchy", url: "https://github.com/KittenYang/Pitchy.git", .branch("master"))
     ],
     targets: [
         .target(name: "Beethoven", dependencies: ["Pitchy"], path: "Source")
