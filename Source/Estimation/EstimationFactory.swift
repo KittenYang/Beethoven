@@ -1,4 +1,4 @@
-final class EstimationFactory {
+public final class EstimationFactory {
   func create(_ strategy: EstimationStrategy) -> Estimator {
     let estimator: Estimator
 

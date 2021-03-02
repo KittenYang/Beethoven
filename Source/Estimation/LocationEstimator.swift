@@ -1,10 +1,10 @@
-protocol LocationEstimator: Estimator {
+public protocol LocationEstimator: Estimator {
   func estimateLocation(buffer: Buffer) throws -> Int
 }
 
 // MARK: - Default implementation
 
-extension LocationEstimator {
+public extension LocationEstimator {
   var transformer: Transformer {
     return FFTTransformer()
   }
